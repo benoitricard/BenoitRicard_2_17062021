@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Compatibilité pour navigateurs -->
     <meta charset="utf-8">
+    <!-- Bibliothèque Font Awesome -->
+    <script src="https://kit.fontawesome.com/2fda14c063.js" crossorigin="anonymous"></script>
+    <!-- Fichier CSS relié -->
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Reservia</title>
+    <title>Reservia - Hébergements à Marseille</title>
 </head>
 <body>
     <!-- Corps de la page -->
@@ -14,51 +18,50 @@
             <section class="logo">
                 <img src="images/logo/Reservia.svg">
             </section>
-            <!-- Barre de navigation coin supérieur droit -->
+            <!-- Barre de navigation -->
             <nav>
-                <div class="housing_top"></div>
                 <ul>
-                    <li class="nav1"><a href="#housing">Hébergements</a></li>
-                    <li class="nav2"><a href="#activities">Activités</a></li>
-                    <li class="nav3"><a href="#">S'inscrire</a></li>
+                    <li class="nav_el nav_heb medium"><a href="#housing">Hébergements</a></li>
+                    <li class="nav_el nav_act medium"><a href="#activities">Activités</a></li>
+                    <li class="nav_log bold"><a href="#">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
         <!-- Texte d'accroche de la page -->
         <section id="slogan">
-            <h1 class="h1_slogan">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p class="p_slogan">En plein centre ville ou en pleine nature</p>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="medium">En plein centre ville ou en pleine nature</p>
         </section>
         <!-- Barre de recherche -->
         <form method="post" id="search_bar">
-            <img class="locate_pin" src="images/icones/location_pin.svg" height="13px" width="13px">
-            <input type="search" placeholder="Localisation" value="Marseille, France">
-            <button class="search">Rechercher</button>
+            <i class="fas fa-map-marker-alt i_black"></i>
+            <input class="bold" type="search" placeholder="Localisation" value="Marseille, France">
+            <button class="search semibold">Rechercher</button>
         </form>
         <!-- Filtres de recherche -->
         <section id="filters">
-            <p class="filtres">Filtres</p>
-                <form method="post" class="economic">
-                    <img class="icon_economic" src="images/icones/money.svg" height="15px" width="15px">
-                    <button class="economic_button">Économique</button>
-                </form>
-                <form method="post" class="family">
-                    <img class="icon_family" src="images/icones/child.svg" height="15px" width="15px">
-                    <button class="family_button">Familial</button>
-                </form>
-                <form method="post" class="romantic">
-                    <img class="icon_romantic" src="images/icones/heart.svg" height="15px" width="15px">
-                    <button class="romantic_button">Romantique</button>
-                </form>
-                <form method="post" class="pets">
-                    <img class="icon_pets" src="images/icones/dog.svg" height="15px" width="15px">
-                    <button class="pets_button">Animaux autorisés</button>
-                </form>
+            <p class="bold">Filtres</p>
+                <div class="f_set"> <!-- Ensemble du boutton -->
+                    <i class="fas fa-money-bill-wave f_icon i_blue"></i>
+                    <button class="f_button bold">Économique</button>
+                </div>
+                <div class="f_set">
+                    <i class="fas fa-child f_icon i_blue"></i>
+                    <button class="f_button bold">Familial</button>
+                </div>
+                <div class="f_set">
+                    <i class="fas fa-heart f_icon i_blue"></i>
+                    <button class="f_button bold">Romantique</button>
+                </div>
+                <div class="f_set">
+                    <i class="fas fa-dog f_icon i_blue"></i>
+                    <button class="f_button bold">Animaux autorisés</button>
+                </div>
         </section>
         <!-- Message d'info -->
-        <section id="info_msg">
-            <img class="icon_info" src="images/icones/info.svg" height="10px" width="10px">
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        <section id="info">
+            <i class="fas fa-info i_blue"></i>
+            <p class="medium">Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
         <!-- Housing + Aside -->
         <section id="body1">
@@ -70,7 +73,7 @@
                             <img class="img1_photo" src="images/hebergements/aub_caneb.jpg" height="150px" width="200px">
                             <div class="img1_titre">
                                 <h3>Auberge la Canebière</h3>
-                                <p class="p_h">Nuit à partir de <strong>25€</strong></p>
+                                <p class="p_h">Nuit à partir de <span class="bold">25€</span></p>
                                 <div class="stars1">
                                     <img src="images/icones/starfull.svg" height="12px">
                                     <img src="images/icones/starfull.svg" height="12px">
@@ -84,7 +87,7 @@
                             <img class="img2_photo" src="images/hebergements/hotel_port.jpg" height="150px" width="200px">
                             <div class="img2_titre">
                                 <h3>Hôtel du port</h3>
-                                <p class="p_h">Nuit à partir de <strong>52€</strong></p>
+                                <p class="p_h">Nuit à partir de <span class="bold">52€</span></p>
                                 <div class="stars2">
                                     <img src="images/icones/starfull.svg" height="12px">
                                     <img src="images/icones/starfull.svg" height="12px">
@@ -98,7 +101,7 @@
                             <img class="img3_photo" src="images/hebergements/hotel_mouette.jpg" height="150px" width="200px">
                             <div class="img3_titre">
                                 <h3>Hôtel Les Mouettes</h3>
-                                <p class="p_h">Nuit à partir de <strong>76€</strong></p>
+                                <p class="p_h">Nuit à partir de <span class="bold">76€</span></p>
                                 <div class="stars3">
                                     <img src="images/icones/starfull.svg" height="12px">
                                     <img src="images/icones/starfull.svg" height="12px">
@@ -112,7 +115,7 @@
                             <img class="img4_photo" src="images/hebergements/hotel_mer.jpg" height="150px" width="200px">
                             <div class="img4_titre">
                                 <h3>Hôtel de la Mer</h3>
-                                <p class="p_h">Nuit à partir de <strong>46€</strong></p>
+                                <p class="p_h">Nuit à partir de <span class="bold">46€</span></p>
                                 <div class="stars4">
                                     <img src="images/icones/starfull.svg" height="12px">
                                     <img src="images/icones/starfull.svg" height="12px">
@@ -126,7 +129,7 @@
                             <img class="img5_photo" src="images/hebergements/aub_panier.jpg" height="150px" width="200px">
                             <div class="img5_titre">
                                 <h3>Auberge Le Panier</h3>
-                                <p class="p_h">Nuit à partir de <strong>23€</strong></p>
+                                <p class="p_h">Nuit à partir de <span class="bold">23€</span></p>
                                 <div class="stars5">
                                     <img src="images/icones/starfull.svg" height="12px">
                                     <img src="images/icones/starfull.svg" height="12px">
@@ -140,7 +143,7 @@
                             <img class="img6_photo" src="images/hebergements/hotel_amina.jpg" height="150px" width="200px">
                             <div class="img6_titre">
                                 <h3>Hôtel Amina</h3>
-                                <p class="p_h">Nuit à partir de <strong>96€</strong></p>
+                                <p class="p_h">Nuit à partir de <span class="bold">96€</span></p>
                                 <div class="stars6">
                                     <img src="images/icones/starfull.svg" height="12px">
                                     <img src="images/icones/starfull.svg" height="12px">

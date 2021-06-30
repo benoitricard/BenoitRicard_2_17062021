@@ -1,13 +1,8 @@
-/* Page entière */
+/* Propriétés générales à la page */
 body {
     font-family: "Raleway", sans-serif;
     width: 1150px;
     margin: auto;
-}
-
-p {
-    font-family: "Raleway Medium";
-    font-size: 1em;
 }
 
 .p_h {
@@ -16,17 +11,40 @@ p {
     padding-left: 5px;
 }
 
+/* Polices et gras */
+.medium {
+    font-family: "Raleway Medium";
+}
+
+.semibold {
+    font-family: "Raleway SemiBold";
+}
+
+.bold {
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+/* Couleur des icônes */
+.i_blue {
+    color: #0065FC;
+}
+
+.i_black {
+    color: black;
+}
+
+.i_grey {
+    color: #bdbdbd;
+}
+
+/* Titres */
 h1 {
     font-weight: bold;
     font-size: 1.4em;
 }
 
-h2 {
-    font-weight: bold;
-    font-size: 1em;
-}
-
-h3 {
+h2, h3 {
     font-weight: bold;
     font-size: 1em;
 }
@@ -35,15 +53,12 @@ a {
     text-decoration: none;
 }
 
-strong {
-    font-weight: bold;
-}
-
 /* Header + Logo */
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
     height: 50px;
 }
@@ -56,71 +71,44 @@ header {
         width:80px;
     }
 
-/* Barre de navigation coin supérieur droit */
+/* Barre de navigation */
 ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    width: 360px;
+    width: 400px;
     height: 50px;
     list-style-type: none;
-    position: relative;
-    top: -25px;
-    right: -3px;
     font-size: 1em;
-    font-family: "Raleway Medium";
 }
 
-.housing_top {
-    height: 10px;
+.nav_el > a:visited {
+    color: black;
+}
+
+.nav_el:hover, .nav_log:hover {
+    color: #0065FC;
+    border-top: solid 2px #0065FC;
+}
+
+.nav_log, .nav_log > a:visited, .nav_el > a:hover, .nav_log > a:hover {
+    color: #0065FC;
+}
+
+.nav_el, .nav_log {
+    height: 88px;
     width: 150px;
-    background-color: #0065FC;
-    position: relative;
-    top: -27.5px;
-    right: -15px;
+    text-align: center;
+    line-height: 88px;
 }
-
-    .nav1 > a:visited, a:link {
-        color: black;
-    }
-
-    .nav1 > a:hover, a:active {
-        color: #0065FC;
-    }
-
-    .nav2 > a:visited, a:link {
-        color: black;
-    }
-
-    .nav2 > a:hover, a:active {
-        color: #0065FC;
-    }
-
-    .nav3 {
-        font-family: "Raleway";
-        font-weight: bold;
-    }
-
-    .nav3 > a:visited, a:link {
-        color: #0065FC;
-    }
-
-    table {
-        border-collapse: collapse;
-    }
-
-    td {
-        border: solid;
-        height: 100px;
-    }
 
 /* Texte d'accroche de la page */
-.h1_slogan {
+#slogan > h1 {
     margin-top: 15px;
     margin-bottom: 5px;
 }
 
-.p_slogan {
+#slogan > p {
     margin-top: 5px;
     margin-bottom: 18px;
 }
@@ -130,7 +118,7 @@ ul {
     display: flex;
 }
 
-    .locate_pin {
+    .fa-map-marker-alt {
         background-color: #F2F2F2;
         padding: 12px;
         border-radius: 10px 0 0 10px;
@@ -138,8 +126,6 @@ ul {
 
     input {
         background: none;
-        font-family: "Raleway";
-        font-weight: bold;
         font-size: 1em;
         padding: 5px 25px 5px 10px;
         border-top: solid 1.5px #F2F2F2;
@@ -153,16 +139,18 @@ ul {
         background-color: #0065FC;
         border-radius: 0 10px 10px 0;
         border: none;
-        font-family: "Raleway SemiBold";
         font-size: 1em;
         padding: 0 15px 0 15px;
     }
 
     .search:hover {
-        background-color: #005ce6;
+        background-color: #0057da;
     }
 
-/* Filters */
+
+
+/* Section #Filters */
+/* Conteneur #Filters */
 #filters {
     display: flex;
     margin-top: 20px;
@@ -170,152 +158,65 @@ ul {
     justify-content: flex-start;
 }
 
-.filtres {
-    font-family: "Raleway";
-    font-weight: bold;
-    font-size: 1em;
-    align-self: flex-start;
-    justify-self: center;
-    margin-right: -15px;
+/* Titre de la catégorie filtres */
+#filters > p {
+    margin-right: 15px;
 }
 
-    /* Economic Filter */
-    .economic {
-        display: flex;
-        margin-right: -15px;
-    }
+/* Habillage des boutons et icônes de filtres */
+.f_set {
+    margin-right: 15px;
+}
 
-        .icon_economic {
-            background-color: #DEEBFF;
-            border-radius: 25px;
-            padding: 9px;
-            position: relative;
-            right: -30px;
-            border: solid 1.5px #DEEBFF;
-        }
+.f_icon {
+    background-color: #DEEBFF;
+    border-radius: 25px;
+    width: 35.4px;
+    height: 35.4px;
+    position: absolute;
+    text-align: center;
+    line-height: 35.4px;
+}
 
-        .economic_button {
-            border-radius: 25px;
-            background: none;
-            padding: 8px 15px 8px 40px;
-            border: solid 1.5px #dadada;
-            font-family: "Raleway";
-            font-weight: bold;
-            font-size: 1em;
-        }
+.f_button {
+    border-radius: 50px;
+    background: none;
+    padding: 8px 15px 8px 43px;
+    border: solid 1.5px #dadada;
+    font-size: 1em;
+}
 
-        .economic_button:hover {
-            background-color: #0065FC;
-            color: white;
-            border: solid 1.5px #0065FC;
-        }
+/* Animations de survol et de clic sur les filtres */
+.f_button:hover {
+    background-color: #0065FC;
+    color: white;
+    border: solid 1.5px #0065FC;
+}
 
-    /* Family Filter */
-    .family {
-        display: flex;
-        margin-right: -15px;
-    }
+.f_button:active {
+    background-color: #0057da;
+    color: white;
+    border: solid 1.5px #0057da;
+}
 
-        .icon_family {
-            background-color: #DEEBFF;
-            border-radius: 25px;
-            padding: 9px;
-            position: relative;
-            right: -30px;
-            border: solid 1.5px #DEEBFF;
-        }
 
-        .family_button {
-            border-radius: 25px;
-            background: none;
-            padding: 8px 15px 8px 40px;
-            border: solid 1.5px #dadada;
-            font-family: "Raleway";
-            font-weight: bold;
-            font-size: 1em;
-        }
-
-        .family_button:hover {
-            background-color: #0065FC;
-            color: white;
-            border: solid 1.5px #0065FC;
-        }
-
-    /* Romantic Filter */
-    .romantic {
-        display: flex;
-        margin-right: -15px;
-    }
-
-        .icon_romantic {
-            background-color: #DEEBFF;
-            border-radius: 25px;
-            padding: 9px;
-            position: relative;
-            right: -30px;
-            border: solid 1.5px #DEEBFF;
-        }
-
-        .romantic_button {
-            border-radius: 25px;
-            background: none;
-            padding: 8px 15px 8px 40px;
-            border: solid 1.5px #dadada;
-            font-family: "Raleway";
-            font-weight: bold;
-            font-size: 1em;
-        }
-
-        .romantic_button:hover {
-            background-color: #0065FC;
-            color: white;
-            border: solid 1.5px #0065FC;
-        }
-
-    /* Pets Filter */
-    .pets {
-        display: flex;
-        margin-right: -15px;
-    }
-
-        .icon_pets {
-            background-color: #DEEBFF;
-            border-radius: 25px;
-            padding: 9px;
-            position: relative;
-            right: -30px;
-            border: solid 1.5px #DEEBFF;
-        }
-
-        .pets_button {
-            border-radius: 25px;
-            background: none;
-            padding: 8px 15px 8px 40px;
-            border: solid 1.5px #dadada;
-            font-family: "Raleway";
-            font-weight: bold;
-            font-size: 1em;
-        }
-
-        .pets_button:hover {
-            background-color: #0065FC;
-            color: white;
-            border: solid 1.5px #0065FC;
-        }
 
 /* Message d'info */
-#info_msg {
+#info {
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 12px;
 }
 
-.icon_info {
-    background: none;
+.fa-info {
     border: solid 1.5px #dadada;
-    border-radius: 25px;
-    padding: 4px;
+    border-radius: 50px;
+    padding: 6px;
+    height: 11px;
+    width: 11px;
     margin-right: 10px;
+    text-align: center;
+    line-height: 11px;
 }
 
 /* Housing + Aside */
