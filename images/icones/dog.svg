@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_53" data-name="Rectangle 53" width="1000" height="1000" fill="#0065fc"/>
+    </clipPath>
+    <clipPath id="clip-dog">
+      <rect width="1000" height="1000"/>
+    </clipPath>
+  </defs>
+  <g id="dog" clip-path="url(#clip-dog)">
+    <g id="Groupe_de_masques_4" data-name="Groupe de masques 4" clip-path="url(#clip-path)">
+      <path id="dog-2" data-name="dog" d="M582.148,437.5,875,542.09V968.75A31.25,31.25,0,0,1,843.75,1000h-125a31.25,31.25,0,0,1-31.25-31.25V750H375V968.75A31.25,31.25,0,0,1,343.75,1000h-125a31.25,31.25,0,0,1-31.25-31.25V550.957c-72.578-25.879-125-94.59-125-175.957a62.5,62.5,0,0,1,125,0A62.617,62.617,0,0,0,250,437.5ZM1062.5,218.75v62.5a125,125,0,0,1-125,125H875v69.492L625,386.465V93.75c0-27.832,33.633-41.777,53.34-22.09L731.621,125H836.367c21.309,0,46.387,15.469,55.9,34.551L906.25,187.5h125A31.25,31.25,0,0,1,1062.5,218.75Zm-218.75,0A31.25,31.25,0,1,0,812.5,250,31.25,31.25,0,0,0,843.75,218.75Z" transform="translate(-62.5 -31.222)" fill="#0065fc"/>
+    </g>
+  </g>
+</svg>

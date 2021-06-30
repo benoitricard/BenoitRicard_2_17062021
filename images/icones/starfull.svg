@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_54" data-name="Rectangle 54" width="1000" height="1000" fill="#0065fc"/>
+    </clipPath>
+    <clipPath id="clip-starfull">
+      <rect width="1000" height="1000"/>
+    </clipPath>
+  </defs>
+  <g id="starfull" clip-path="url(#clip-starfull)">
+    <g id="Groupe_de_masques_6" data-name="Groupe de masques 6" clip-path="url(#clip-path)">
+      <path id="star-solid" d="M484.672,33.271,362.616,280.747,89.533,320.56c-48.972,7.1-68.6,67.477-33.084,102.056l197.57,192.523L207.289,887.1c-8.411,49.159,43.364,85.981,86.729,62.991l244.3-128.411,244.3,128.411c43.364,22.8,95.14-13.832,86.729-62.991L822.615,615.139l197.57-192.523c35.514-34.579,15.888-94.953-33.084-102.056L714.017,280.747,591.962,33.271c-21.869-44.112-85.233-44.673-107.289,0Z" transform="translate(-38.316 21.461)" fill="#0065fc"/>
+    </g>
+  </g>
+</svg>
