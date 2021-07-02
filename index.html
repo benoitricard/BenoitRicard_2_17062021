@@ -15,15 +15,13 @@
         <!-- En-tête du site web -->
         <header>
             <!-- Logo Reservia -->
-            <section class="logo">
                 <img src="images/logo/Reservia.svg">
-            </section>
             <!-- Barre de navigation -->
             <nav>
                 <ul>
-                    <li class="nav_el nav_heb medium"><a href="#housing">Hébergements</a></li>
-                    <li class="nav_el nav_act medium"><a href="#activities">Activités</a></li>
-                    <li class="nav_log bold"><a href="#">S'inscrire</a></li>
+                    <li class="nav_element medium"><a href="#housing">Hébergements</a></li>
+                    <li class="nav_element medium"><a href="#activities">Activités</a></li>
+                    <li class="nav_login bold"><a href="#">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,28 +32,28 @@
         </section>
         <!-- Barre de recherche -->
         <form method="post" id="search_bar">
-            <i class="fas fa-map-marker-alt i_black"></i>
+            <i class="fas fa-map-marker-alt"></i>
             <input class="bold" type="search" placeholder="Localisation" value="Marseille, France">
-            <button class="search semibold">Rechercher</button>
+            <button class="semibold">Rechercher</button>
         </form>
         <!-- Filtres de recherche -->
         <section id="filters">
             <p class="bold">Filtres</p>
-                <div class="f_set"> <!-- Ensemble du boutton -->
-                    <i class="fas fa-money-bill-wave f_icon i_blue"></i>
-                    <button class="f_button bold">Économique</button>
+                <div class="filter_set"> <!-- Ensemble du boutton -->
+                    <i class="fas fa-money-bill-wave i_blue"></i>
+                    <button class="filter_button bold">Économique</button>
                 </div>
-                <div class="f_set">
-                    <i class="fas fa-child f_icon i_blue"></i>
-                    <button class="f_button bold">Familial</button>
+                <div class="filter_set">
+                    <i class="fas fa-child i_blue"></i>
+                    <button class="filter_button bold">Familial</button>
                 </div>
-                <div class="f_set">
-                    <i class="fas fa-heart f_icon i_blue"></i>
-                    <button class="f_button bold">Romantique</button>
+                <div class="filter_set">
+                    <i class="fas fa-heart i_blue"></i>
+                    <button class="filter_button bold">Romantique</button>
                 </div>
-                <div class="f_set">
-                    <i class="fas fa-dog f_icon i_blue"></i>
-                    <button class="f_button bold">Animaux autorisés</button>
+                <div class="filter_set">
+                    <i class="fas fa-dog i_blue"></i>
+                    <button class="filter_button bold">Animaux autorisés</button>
                 </div>
         </section>
         <!-- Message d'info -->
@@ -64,7 +62,7 @@
             <p class="medium">Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
         <!-- Housing + Aside -->
-        <section id="body1">
+        <section id="housing_and_popular">
             <!-- Conteneur 'Hébergements à Marseille' -->
             <div class="conteneur_housing">
                 <h1>Hébergements à Marseille</h1>
@@ -160,10 +158,10 @@
             <div class="popular">
                 <div class="head_popular">
                     <h1>Les plus populaires</h1>
-                    <i class="fas fa-fire i_black"></i>
+                    <i class="fas fa-fire"></i>
                 </div>
                 <div class="conteneur_cards_popular">
-                    <div class="conteneur_pop1">
+                    <div class="card_popular">
                         <div class="cards_photo_popular photo_pop1"></div>
                         <div class="description_cards_popular">
                             <h2>Hôtel le soleil du matin</h2>
@@ -177,7 +175,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="conteneur_pop2">
+                    <div class="card_popular">
                         <div class="cards_photo_popular photo_pop2"></div>
                         <div class="description_cards_popular">
                             <h2>Au coeur de l'eau Chambres d'hôte</h2>
@@ -191,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="conteneur_pop3">
+                    <div class="card_popular">
                         <div class="cards_photo_popular photo_pop3"></div>
                         <div class="description_cards_popular">
                             <h2>Hôtel tout bleu et blanc</h2>
@@ -232,34 +230,34 @@
                 </div>
             </div>
         </section>
+    </main>
         <!-- Pied de page -->
         <footer>
             <!-- Catégorie 'A propos' -->
-            <div class="a_propos cat_footer">
+            <div class="categorie_footer">
                 <ul>
-                    <li class="li_footer bold"><a class="link_footer_t" href="#">A propos</a></li>
-                    <li class="li_footer medium"><a class="link_footer" href="#">Fonctionnement du site</a></li>
-                    <li class="li_footer medium"><a class="link_footer" href="#">Conditions générales de vente</a></li>
-                    <li class="li_footer medium"><a class="link_footer" href="#">Données et confidentialité</a></li>
+                    <li class="bold"><a class="categorie_titre_footer" href="#">À propos</a></li>
+                    <li class="medium"><a class="sous_categorie_titre_footer" href="#">Fonctionnement du site</a></li>
+                    <li class="medium"><a class="sous_categorie_titre_footer" href="#">Conditions générales de vente</a></li>
+                    <li class="medium"><a class="sous_categorie_titre_footer" href="#">Données et confidentialité</a></li>
                 </ul>
             </div>
             <!-- Catégorie 'Nos hébergements' -->
-            <div class="nos_heb cat_footer">
+            <div class="categorie_footer">
                 <ul>
-                    <li class="li_footer bold"><a class="link_footer_t" href="#">Nos hébergements</a></li>
-                    <li class="li_footer medium"><a class="link_footer" href="#">Charte qualité</a></li>
-                    <li class="li_footer medium"><a class="link_footer" href="#">Soumettre votre hôtel</a></li>
+                    <li class="bold"><a class="categorie_titre_footer" href="#">Nos hébergements</a></li>
+                    <li class="medium"><a class="sous_categorie_titre_footer" href="#">Charte qualité</a></li>
+                    <li class="medium"><a class="sous_categorie_titre_footer" href="#">Soumettre votre hôtel</a></li>
                 </ul>
             </div>
             <!-- Catégorie 'Assistance' -->
-            <div class="assistance cat_footer">
+            <div class="categorie_footer">
                 <ul>
-                    <li class="li_footer bold"><a class="link_footer_t" href="#">Assistance</a></li>
-                    <li class="li_footer medium"><a class="link_footer" href="#">Centre d'aide</a></li>
-                    <li class="li_footer medium"><a class="link_footer" href="#">Nous contacter</a></li>
+                    <li class="bold"><a class="categorie_titre_footer" href="#">Assistance</a></li>
+                    <li class="medium"><a class="sous_categorie_titre_footer" href="#">Centre d'aide</a></li>
+                    <li class="medium"><a class="sous_categorie_titre_footer" href="#">Nous contacter</a></li>
                 </ul>
             </div>
         </footer>
-    </main>
 </body>
 </html>
