@@ -32,6 +32,12 @@
         margin: auto; /* Marge de la page entière (sauf footer) */
     }
 
+    .span_link_div { /* Rend les cartes cliquables et ramenant à un lien vide */
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
 
 /* Polices et gras */
     .medium { /* Paragraphes */
@@ -43,7 +49,8 @@
     }
 
     .bold { /* Titres et catégories principaux */
-        font-family: "Raleway Bold";
+        font-family: "Raleway";
+        font-weight: bold;
     }
 
 
@@ -295,6 +302,7 @@
                     box-shadow: 0 0 0.8rem #afafaf;
                     border-radius: 1.1rem;
                     cursor: pointer;
+                    position: relative;
                 }
 
                     .photo_card_housing { /* Photos des cartes d'hébergements */
@@ -415,7 +423,7 @@
                 margin-bottom: 4.85rem;
             }
 
-                .cards_photo_popular { /* Cartes 'Les plus populaires' */
+                .cards_photo_popular { /* Photos 'Les plus populaires' */
                     border: solid 5px white;
                     height: 92.5%;
                     width: 45%;
@@ -444,6 +452,7 @@
                 box-shadow: 0 0 0.8rem #afafaf;
                 border-radius: 1.1rem;
                 cursor: pointer;
+                position: relative;
             }
 
                 .description_cards_popular { /* Description 'Les plus populaires' */
@@ -505,6 +514,7 @@
                 display: flex;
                 flex: 1 1 5rem;
                 cursor: pointer;
+                position: relative;
                 width: 100%;
                 background-position: center;
             }
