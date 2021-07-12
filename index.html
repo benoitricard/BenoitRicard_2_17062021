@@ -14,22 +14,14 @@
 <body>
     <!-- Corps de la page -->
     <main>
-        <!-- En-tête du site web -->
+        <!-- Header - Barre de navigation -->
         <header>
-            <div class="logo">
-            <!-- Logo Reservia -->
-                <img src="images/logo/Reservia.svg" alt="logo">
-            </div>
-            <!-- Barre de navigation -->
             <nav>
-                <ul>
-                    <li class="medium"><a href="#housing_and_popular">Hébergements</a></li>
-                    <li class="medium"><a href="#activities">Activités</a></li>
-                </ul>
+                <img id="logo" src="images/logo/Reservia.svg" alt="logo">
+                <a class="medium" id="nav_housing" href="#housing">Hébergements</a>
+                <a class="medium" id="nav_activities" href="#activities">Activités</a>
+                <a class="bold" id="nav_login" href="#">S'inscrire</a>
             </nav>
-            <div class="login">
-                <a class="bold" href="#">S'inscrire</a>
-            </div>
         </header>
         <!-- Texte d'accroche de la page -->
         <section id="slogan">
@@ -73,7 +65,7 @@
         <!-- Housing + Aside -->
         <section id="housing_and_popular">
             <!-- Conteneur 'Hébergements à Marseille' -->
-            <div class="housing">
+            <div id="housing">
                 <h1>Hébergements à Marseille</h1>
                     <div class="conteneur_cards_housing">
                         <div class="item_card_housing">

@@ -106,7 +106,7 @@
         font-size: 1.6rem;
     }
     
-    h2, p, .stars, li, .filter_button, #search_bar > input, .search_button { /* Titres secondaires */
+    h2, p, .stars, li, .filter_button, #search_bar > input, .search_button, a { /* Titres secondaires */
         font-size: 1.2rem;
     }
     
@@ -115,49 +115,58 @@
     }
 
 /* Header */
-header { /* Conteneur */
-    align-items: center;
-    flex-flow: row wrap;
-    justify-content: space-between;
+nav { /* Conteneur */
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    row-gap: 15%;
+    height: 8rem;
     margin-top: 1rem;
 }
 
-.logo, .login {
-    padding: 0 2rem;
+#logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-left: 2rem;
+    align-self: center;
 }
 
-    /* Barre de navigation */
-    nav > ul, header {
-        display: flex;
-    }
+#nav_login {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    text-align: end;
+    padding-right: 2rem;
+    color: #0065FC;
+    align-self: center;
+}
 
-    nav {
-        width: 100%;
-        order: 1;
-    }
+#nav_housing {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+}
 
-    .login > a, .login > a:visited, nav > ul > li > a:hover { /* Couleur des liens */
-        color: #0065FC;
-    }
+#nav_activities {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
 
-    nav > ul > li { /* Taille et alignement des éléments de navigation */
-        width: 50%;
-        height: 2.5rem;
-        border-bottom: solid 0.3rem grey;
-        text-align: center;
-    }
+#nav_housing, #nav_activities {
+    border-bottom: solid 0.2rem grey;
+    text-align: center;
+}
 
-    nav > ul > li:hover {
-        border-bottom: solid 0.3rem #0065FC;
-    }
+#nav_housing:hover, #nav_activities:hover {
+    border-bottom: solid 0.2rem #0065FC;
+    color: #0065FC;
+}
 
 /* Texte d'accroche de la page */
 #slogan > h1 { /* Marge du titre */
-    margin: 1.5rem 2rem 0.25rem 2rem;
+    margin: 2rem 2rem 0.25rem 2rem;
 }
 
 #slogan > p { /* Marge du paragraphe */
-    margin: 0.25rem 2rem 1.5rem 2rem;
+    margin: 0.25rem 2rem 2rem 2rem;
 }
 
 /* Barre de recherche */
@@ -237,12 +246,12 @@ header { /* Conteneur */
     .filter_button:hover { /* Survol */
         color: white;
         background-color: #0065FC;
-        border: solid 0.2rem #0065FC;
+        border: solid 0.2rem transparent;
     }
 
     .filter_button:active { /* Clic */
         background-color: #0057da;
-        border: solid 0.2rem #0057da;
+        border: solid 0.2rem transparent;
     }
 
 /* Message d'info */
@@ -332,7 +341,7 @@ header { /* Conteneur */
         }
 
 /* Hébergements */
-.housing { /* Conteneur */
+#housing { /* Conteneur */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -341,11 +350,11 @@ header { /* Conteneur */
     order: 1;
 }
 
-    .housing > h1 { /* Titre */
+    #housing > h1 { /* Titre */
         margin: 2rem 0 0 2rem;
     }
 
-    .housing > h2 { /* Afficher plus */
+    #housing > h2 { /* Afficher plus */
         margin: 0 0 2rem 2rem;
     }
 

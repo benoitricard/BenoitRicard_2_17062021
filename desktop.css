@@ -119,46 +119,41 @@ a:visited, a { /* Effets d'affichage des liens visités */
 }
 
 /* Header */
-header { /* Conteneur */
-    margin-top: 1.5rem;
-    height: 3.6rem;
-    justify-content: space-between;
-    align-items: center;
+nav { /* Conteneur */
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    height: 5rem;
 }
 
-    /* Barre de navigation */
-        nav > ul, header, header > div, nav {
-            display: flex;
-        }
+#logo {
+    grid-column: 1 / 14;
+    align-self: center;
+}
 
-        .login {
-            justify-self: flex-end;
-        }
+#nav_login {
+    grid-column: 20 / 23;
+    color: #0065FC;
+}
 
-        header > div {
-            width: 10%;
-        }
+#nav_housing {
+    grid-column: 14 / 17;
+}
 
-        nav {
-            width: 80%;
-            justify-content: flex-end;
-        }
+#nav_activities {
+    grid-column: 17 / 20;
+}
 
-        .login > a, .login > a:visited, nav > ul > li > a:hover { /* Couleur des liens */
-            color: #0065FC;
-        }
+#nav_housing, #nav_activities, #nav_login {
+    border-top: solid 0.2rem transparent;
+    text-align: center;
+    line-height: 5rem;
+    height: 5rem;
+}
 
-        nav > ul > li:hover { /* Effets de survol */
-            border-top: solid 0.3rem #0065FC;
-        }
-
-        nav > ul > li, .login > a { /* Taille et alignement des éléments de navigation */
-            height: 6.6rem;
-            width: 9rem;
-            line-height: 6rem;
-            border-top: solid 0.3rem transparent;
-            text-align: center;
-        }
+#nav_housing:hover, #nav_activities:hover {
+    border-top: solid 0.2rem #0065FC;
+    color: #0065FC;
+}
         
 /* Texte d'accroche de la page */
 #slogan > h1 { /* Marge du titre */
@@ -239,12 +234,12 @@ header { /* Conteneur */
     .filter_button:hover { /* Survol */
         color: white;
         background-color: #0065FC;
-        border: solid 0.1rem #0065FC;
+        border: solid 0.1rem transparent;
     }
 
     .filter_button:active { /* Clic */
         background-color: #0057da;
-        border: solid 0.1rem #0057da;
+        border: solid 0.1rem transparent;
     }
 
 /* Message d'info */
@@ -274,7 +269,7 @@ header { /* Conteneur */
 }
 
 /* Hébergements */
-.housing { /* Conteneur */
+#housing { /* Conteneur */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -284,11 +279,11 @@ header { /* Conteneur */
     border-radius: 2rem;
 }
 
-    .housing > h1 { /* Titre */
+    #housing > h1 { /* Titre */
         margin: 2rem 0 0 2rem;
     }
 
-    .housing > h2 { /* Afficher plus */
+    #housing > h2 { /* Afficher plus */
         margin: 0 0 2rem 2rem;
     }
 
