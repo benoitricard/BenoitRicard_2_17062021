@@ -93,8 +93,8 @@ body {
 .photo_activite6 { /* Activité 6 */
     background-image: url(images/activites/longchamp.jpg);
 }
-    
-.medium { /* Paragraphes */
+
+.medium {
     font-family: "Raleway Medium";
 }
     
@@ -136,6 +136,8 @@ nav { /* Conteneur */
 #search_bar > input { /* Barre de texte */
     background: none;
     padding: 0.2rem 0 0.2rem 1rem;
+    border-left: none;
+    border-right: none;
 }
 
 .button_fa-search:hover, .search_button:hover { /* Effets de survol du bouton 'Rechercher' */
@@ -292,23 +294,23 @@ nav { /* Conteneur */
         }
 
 /********* ACTIVITES *********/
-        .card_activite { /* Cartes */
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-        }
+.card_activite { /* Cartes */
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
         
-        .photo_activite { /* Photos */
-            border-radius: 1rem 1rem 0 0;
-        }
+.photo_activite { /* Photos */
+    border-radius: 1rem 1rem 0 0;
+}
 
-        .card_activite > p { /* Descriptions */
-            background-color: white;
-            height: auto;
-            line-height: 1.5rem;
-            border-radius: 0 0 1rem 1rem;
-            padding: 0 1rem;
-        }
+.card_activite > p { /* Descriptions */
+    background-color: white;
+    height: auto;
+    line-height: 1.5rem;
+    border-radius: 0 0 1rem 1rem;
+    padding: 0 1rem;
+}
 
 /* Footer */
 footer { /* Conteneur */
@@ -398,15 +400,9 @@ nav { /* Conteneur */
     border-radius: 0.7rem 0 0 0.7rem;
 }
 
-.button_fa-search { /* Bouton sur mobile */
-    display: none;
-}
-
 #search_bar > input { /* Barre de texte */
     border-top: solid 0.1rem #F2F2F2;
     border-bottom: solid 0.1rem #F2F2F2;
-    border-right: none;
-    border-left: none;
 }
 
 .search_button { /* Bouton 'Rechercher' */
@@ -479,13 +475,8 @@ nav { /* Conteneur */
 
 /* Les plus populaires */
 .popular { /* Conteneur */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #F2F2F2;
     width: 33%;
     height: 40rem;
-    border-radius: 2rem;
 }
  
     .conteneur_cards_popular { /* Conteneur des cartes */
@@ -642,8 +633,6 @@ nav { /* CONTENEUR */
 #search_bar > input { /* SAISIE DE TEXTE */
     border-top: solid 0.2rem #F2F2F2;
     border-bottom: solid 0.2rem #F2F2F2;
-    border-right: none;
-    border-left: none;
 }
 
 /********* FILTRES *********/
@@ -770,20 +759,33 @@ footer { /* CONTENEUR */
 
 }
 
-/********* TABLETTES *********/
-@media (min-width: 480px) and (max-width: 1024px) {
+/********* DESKTOP ET TABLETTES *********/
+@media (min-width: 480px) {
 /********* BARRE DE RECHERCHE *********/
-.button_fa-search { /* BOUTON MOBILES */
+.button_fa-search { /* Bouton sur mobile */
     display: none;
 }
 
-.search_button { /* BOUTON DESKTOP ET TABLETTES */
-    border-radius: 0 1rem 1rem 0;
+.search_button { /* Bouton 'Rechercher' */
     background-color: #0065FC;
     border: none;
     padding: 0 1rem;
     cursor: pointer;
     color: white;
+}
+
+/********* POPULAR *********/
+.popular { /* CONTENEUR */
+    border-radius: 2rem;
+}
+
+}
+
+/********* TABLETTES *********/
+@media (min-width: 480px) and (max-width: 1024px) {
+/********* BARRE DE RECHERCHE *********/
+.search_button { /* BOUTON DESKTOP ET TABLETTES */
+    border-radius: 0 1rem 1rem 0;
 }
 
 /********* POPULAR *********/
