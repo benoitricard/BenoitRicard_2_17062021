@@ -340,7 +340,7 @@ footer { /* CONTENEUR */
 }
 
 /********* DESKTOP *********/
-@media (min-width: 1024px) {
+@media (min-width: 1024.5px) {
 /********* PROPRIETES GENERALES *********/
 main {
     margin: 0 2rem; /* MARGE PAGE (SAUF FOOTER) */
@@ -560,7 +560,7 @@ footer { /* CONTENEUR */
 }
 
 /********* TABLETTES *********/
-@media (min-width: 480px) and (max-width: 1024px) {
+@media (min-width: 480.5px) and (max-width: 1024px) {
 /********* BARRE DE RECHERCHE *********/
 .search_button { /* BOUTON DESKTOP ET TABLETTES */
     border-radius: 0 1rem 1rem 0;
@@ -846,7 +846,7 @@ footer { /* CONTENEUR */
 }
 
 /********* DESKTOP ET TABLETTES *********/
-@media (min-width: 480px) {
+@media (min-width: 480.5px) {
 /********* BARRE DE RECHERCHE *********/
 #search_bar > input { /* BARRE DE TEXTE */
     padding: 0.2rem 0 0.2rem 1rem;
