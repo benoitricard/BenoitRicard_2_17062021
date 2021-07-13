@@ -560,7 +560,7 @@ footer { /* CONTENEUR */
 }
 
 /********* PETITES ET GRANDES TABLETTES *********/
-@media (min-width: 480.5px) and (max-width: 1024px) {
+@media (min-width: 500.5px) and (max-width: 1024px) {
 /********* POPULAR *********/
 .popular { /* CONTENEUR */
     margin: 0 1.5rem;
@@ -597,7 +597,7 @@ footer { /* CONTENEUR */
 }
 
 /********* PETITES TABLETTES *********/
-@media (min-width: 480.5px) and (max-width: 768px) {
+@media (min-width: 500.5px) and (max-width: 768px) {
 /********* HOUSING *********/
 #housing { /* CONTENEUR */
     height: 72rem;
@@ -623,7 +623,7 @@ footer { /* CONTENEUR */
 }
 
 /********* MOBILES *********/
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 500px) {
 /********* BARRE DE RECHERCHE *********/
 #search_bar > input {
     padding: 0 5rem 0 1rem;
@@ -872,7 +872,7 @@ footer { /* CONTENEUR */
 }
 
 /********* DESKTOP ET TABLETTES *********/
-@media (min-width: 480.5px) {
+@media (min-width: 500.5px) {
 /********* BARRE DE RECHERCHE *********/
 #search_bar > input { /* BARRE DE TEXTE */
     padding: 0.2rem 0 0.2rem 1rem;
