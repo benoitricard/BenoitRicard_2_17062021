@@ -559,19 +559,45 @@ footer { /* CONTENEUR */
 
 }
 
-/********* TABLETTES *********/
+/********* PETITES ET GRANDES TABLETTES *********/
 @media (min-width: 480.5px) and (max-width: 1024px) {
-/********* BARRE DE RECHERCHE *********/
-.search_button { /* BOUTON DESKTOP ET TABLETTES */
-    border-radius: 0 1rem 1rem 0;
-}
-
 /********* POPULAR *********/
 .popular { /* CONTENEUR */
     margin: 0 1.5rem;
     border-radius: 2rem;
 }
 
+/********* BARRE DE RECHERCHE *********/
+.search_button { /* BOUTON DESKTOP ET TABLETTES */
+    border-radius: 0 1rem 1rem 0;
+}
+
+/********* HOUSING *********/
+#housing { /* CONTENEUR */
+    height: 53rem;
+}
+
+    .conteneur_cards_housing { /* CONTENEUR CARTES */
+        height: 77%;
+    }
+    
+    .item_card_housing { /* CARTE */
+        width: 30%;
+    }
+    
+/********* ACTIVITES *********/
+#activities { /* CONTENEUR */
+    height: 44rem;
+}
+    
+    .card_activite { /* CARTE */
+        width: 30%;
+    }
+    
+}
+
+/********* PETITES TABLETTES *********/
+@media (min-width: 480.5px) and (max-width: 768px) {
 /********* HOUSING *********/
 #housing { /* CONTENEUR */
     height: 72rem;
