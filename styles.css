@@ -99,6 +99,10 @@ body { /* PAGE ENTIERE */
 .medium { /* PARAGRAPHES */
     font-family: "Raleway Medium";
 }
+
+h3 {
+    font-weight: lighter;
+}
     
 .bold, h1, h2 { /* TITRES */
     font-family: "Raleway";
@@ -346,7 +350,7 @@ h1 { /* TITRES */
     font-size: 1.4rem;
 }
 
-h2, p, .stars, li, .filter_button, #search_bar > input, .search_button { /* SECONDAIRES */
+h2, p, .stars, li, .filter_button, #search_bar > input, .search_button, h3 { /* SECONDAIRES */
     font-size: 1rem;
 }
 
@@ -417,7 +421,7 @@ nav { /* CONTENEUR */
     align-items: center;
 }
 
-    #filters > p, .filter_set { /* MARGE */
+    #filters > h2, .filter_set { /* MARGE */
         margin-right: 1rem;
     }
 
@@ -647,16 +651,16 @@ h1 { /* PRINCIPAUX */
     font-size: 1.6rem;
 }
     
-h2, p, .stars, li, .filter_button, #search_bar > input, .search_button, a { /* SECONDAIRES */
+h2, p, .stars, li, .filter_button, #search_bar > input, .search_button, a, h3 { /* SECONDAIRES */
     font-size: 1.2rem;
 }
 
 /********* HEADER *********/
 nav { /* CONTENEUR */
-    grid-template-columns: repeat(50%);
-    grid-template-rows: repeat(50%);
-    row-gap: 15%;
-    height: 8rem;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    row-gap: 25%;
+    height: 6rem;
     margin-top: 1rem;
 }
 
@@ -695,7 +699,7 @@ nav { /* CONTENEUR */
 
 /********* TEXTE D'ACCROCHE *********/
 #slogan > h1 { /* MARGE DU TITRE */
-    margin: 2rem 2rem 0.25rem 2rem;
+    margin: 3rem 2rem 0.25rem 2rem;
 }
 
 #slogan > p { /* MARGE DU PARAGRAPHE */
