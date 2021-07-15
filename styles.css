@@ -2,11 +2,12 @@
 @media (min-width: 0) {
 /********* PROPRIETES GENERALES *********/
 body { /* PAGE ENTIERE */
-    font-family: "Raleway", sans-serif; /* POLICE */
+    font-family: 'Raleway', sans-serif; /* POLICE */
     margin: auto; /* MARGE */
 }
 
 * { /* DIVERS */
+    font-family: 'Raleway';
     background-size: cover;
     background-position: center;
     list-style-type: none;
@@ -96,16 +97,11 @@ body { /* PAGE ENTIERE */
     background-image: url(images/activites/longchamp.jpg);
 }
 
-.medium { /* PARAGRAPHES */
-    font-family: "Raleway Medium";
-}
-
 h3 {
-    font-weight: lighter;
+    font-weight: normal;
 }
     
 .bold, h1, h2 { /* TITRES */
-    font-family: "Raleway";
     font-weight: bold;
 }
 
@@ -270,7 +266,7 @@ nav { /* CONTENEUR */
     }
 
     .cards_photo_popular { /* PHOTO */
-        width: 45%;
+        width: 35%;
         border-radius: 1rem 0 0 1rem;
     }
 
@@ -286,7 +282,7 @@ nav { /* CONTENEUR */
         flex-direction: column;
         justify-content: space-around;
         border-radius: 0 1.1rem 1.1rem 0;
-        width: 55%;
+        width: 65%;
     }
 
     .description_cards_popular > p, .description_cards_popular > .stars, .description_cards_popular > h2 { /* MARGE DESCRIPTION */
@@ -884,6 +880,7 @@ footer { /* CONTENEUR */
 
 .search_button { /* BOUTON DESKTOP ET TABLETTES */
     background-color: #0065FC;
+    font-weight: bold;
     border: none;
     padding: 0 1rem;
     cursor: pointer;
